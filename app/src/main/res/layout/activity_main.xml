@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#090417"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/strokes"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:text="1-1"
+            android:textColor="#f9f7f1"
+            android:id="@+id/WorkView"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/ResultView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="23dp"
+            android:text="0"
+            android:textColor="#f9f7f1"
+            android:textSize="90sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_radius"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#f65464"
+                android:text="C"
+                android:id="@+id/clear_text"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="()"
+                android:id="@+id/brackets"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="^"
+                android:id="@+id/exponent"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#fcca00"
+                android:text="&#247;"
+                android:id="@+id/division"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="7"
+                android:id="@+id/seven"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="8"
+                android:id="@+id/eight"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="9"
+                android:id="@+id/nine"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#fcca00"
+                android:text="&#215;"
+                android:id="@+id/multiplication"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="4"
+                android:id="@+id/four"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="5"
+                android:id="@+id/five"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="6"
+                android:id="@+id/six"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#fcca00"
+                android:text="&#8722;"
+                android:id="@+id/subtraction"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="1"
+                android:id="@+id/one"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="2"
+                android:id="@+id/two"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="3"
+                android:id="@+id/three"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#fcca00"
+                android:text="+"
+                android:id="@+id/addition"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="."
+                android:id="@+id/decimal"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#64c6cb"
+                android:text="0"
+                android:id="@+id/zero"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/custom_button"
+                android:textSize="@dimen/ClacTextSize"
+                android:textColor="#fddb79"
+                android:text="="
+                android:id="@+id/equalsTo"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
